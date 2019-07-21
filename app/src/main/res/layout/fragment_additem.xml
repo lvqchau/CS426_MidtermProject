@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp"
+    android:paddingHorizontal="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="200dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="60dp"
+                android:layout_marginVertical="5dp"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_marginHorizontal="10dp"
+
+                android:id="@+id/cardview_list"
+                app:cardElevation="2dp"
+                app:cardCornerRadius="18dp"
+                >
+                <EditText
+                    android:id="@+id/editName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:fontFamily="@font/pop_reg"
+                    android:inputType="text"
+                    android:layout_marginHorizontal="15dp"
+                    android:background="@null"
+                    android:hint="Title" />
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="130dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="60dp"
+                android:layout_marginBottom="10dp"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_marginHorizontal="10dp"
+                android:id="@+id/cardview_list2"
+                app:cardElevation="2dp"
+                app:cardCornerRadius="18dp"
+                >
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="$"
+                        android:layout_marginLeft="90dp"
+                        android:gravity="center_vertical"
+                        android:fontFamily="@font/pop_semibold"
+                        android:textSize="30sp"/>
+
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/editPrice"
+                    android:layout_width="70dp"
+                    android:fontFamily="@font/pop_reg"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:layout_below="@id/editDetail"
+                    android:background="@null"
+                    android:layout_marginHorizontal="23dp"
+                    android:hint="Price" />
+            </android.support.v7.widget.CardView>
+
+
+
+        </LinearLayout>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="350dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="230dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="10dp"
+            android:id="@+id/cardview_list3"
+            app:cardElevation="2dp"
+            app:cardCornerRadius="18dp"
+            >
+
+            <EditText
+                android:id="@+id/editDetail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/editName"
+                android:background="@null"
+                android:ems="10"
+                android:gravity="top"
+                android:hint="Details"
+                android:inputType="textMultiLine"
+                android:lines="8"
+                android:fontFamily="@font/pop_reg"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginVertical="15dp"
+                android:maxLines="10"
+                android:minLines="6"
+                android:paddingRight="10dp" />
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="350dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="240dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="20dp"
+            android:id="@+id/cardview_list4"
+            app:cardElevation="2dp"
+            app:cardCornerRadius="18dp"
+            >
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:src="@drawable/chair"
+                android:adjustViewBounds="true"
+                android:layout_below="@id/editPrice"/>
+
+        </android.support.v7.widget.CardView>
+
+
+
+
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_marginHorizontal="10dp"
+            android:layout_width="match_parent"
+            android:paddingTop="4dp"
+            android:layout_height="50dp"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/pop_reg"
+            android:background="@drawable/signout_button_full"
+            android:text="ADD TO LIST" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnChoose"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:backgroundTint="#21ABB1"
+        android:layout_marginTop="320dp"
+        android:paddingTop="22dp"
+        android:layout_marginLeft="305dp"
+
+        android:background="@drawable/blue_circle"
+        android:drawableTop="@drawable/ic_add"
+        />
+
+</RelativeLayout>

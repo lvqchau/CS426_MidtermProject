@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    tools:context=".AccountFragment">
+
+    <RelativeLayout
+        android:layout_width="390dp"
+        android:layout_height="match_parent">
+
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="390dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                >
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/camera_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:fabCustomSize="50dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="150dp"
+                    android:src="@drawable/ic_camera"
+                    />
+                <android.support.v7.widget.CardView
+                    android:layout_width="205dp"
+                    android:layout_height="205dp"
+                    android:layout_marginTop="20dp"
+                    app:cardBackgroundColor="#21ABB1"
+                    app:cardCornerRadius="100dp"
+                    app:cardElevation="0dp">
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/profile_image"
+                        android:layout_width="185dp"
+                        android:layout_height="185dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_store"
+                        />
+
+                </android.support.v7.widget.CardView>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/pop_med"
+                android:layout_marginBottom="25dp"
+                android:text="quynhchauuu"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/pop_reg"
+                android:textSize="18sp"
+                android:layout_marginHorizontal="35dp"
+                android:text="Full name"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="35dp"
+                android:textSize="22sp"
+                android:fontFamily="@font/pop_med"
+                android:id="@+id/fullname"
+                android:textColor="#000"
+                android:text="Long Vu Quynh Chau"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginHorizontal="35dp"
+                android:layout_marginBottom="40dp"
+                android:background="#21ABB1"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/pop_reg"
+                android:textSize="18sp"
+                android:layout_marginHorizontal="35dp"
+                android:text="Date joined"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="35dp"
+                android:textSize="22sp"
+                android:fontFamily="@font/pop_med"
+                android:textColor="#000"
+                android:text="26-08-2018"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginHorizontal="35dp"
+                android:background="#21ABB1"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="65dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:background="@drawable/ic_facebook"/>
+
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:background="@drawable/ic_shopee"/>
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:background="@drawable/ic_instagram"/>
+
+            </LinearLayout>
+
+            <Button
+                android:layout_marginHorizontal="35dp"
+                android:layout_width="match_parent"
+                android:paddingTop="4dp"
+                android:layout_height="50dp"
+                android:textSize="18sp"
+                android:id="@+id/signout_btn"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:fontFamily="@font/pop_reg"
+                android:background="@drawable/signout_button_full"
+                android:text="SIGN OUT" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="40dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textSize="18sp"
+                android:layout_marginLeft="45dp"
+                android:fontFamily="@font/pop_med"
+                android:text="Statistics"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginLeft="45dp"
+                    android:layout_height="200dp"
+                    android:layout_marginBottom="10dp"
+                    android:padding="1dp"
+                    android:background="@drawable/blue_box">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/graph"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="135dp"
+                        android:layout_marginLeft="65dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <View
+                                android:layout_width="28dp"
+                                android:layout_height="5dp"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/blue_rec"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="15sp"                            android:fontFamily="@font/pop_reg"
+                                android:text="Selling Rate"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <View
+                                android:layout_width="28dp"
+                                android:layout_height="5dp"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/yellow_rec"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:textSize="15sp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/pop_reg"
+                                android:text="Customer Rating"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/pop_reg"
+                    android:textSize="15sp"
+                    android:text="26-08-2018"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="textEnd"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/pop_reg"
+                    android:text="26-08-2019" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/map_btn"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/ic_google_maps"/>
+                <android.support.v7.widget.CardView
+                    android:layout_width="wrap_content"
+
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="20dp"
+                    app:cardBackgroundColor="#21ABB1"
+                    android:layout_height="40dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:paddingHorizontal="15dp"
+                        android:id="@+id/map_loc"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/pop_reg"
+                        android:text="214 Nguyen Trai, District 1"
+                        android:textColor="#fff"/>
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@drawable/blue_box"
+                android:padding="5dp"
+                android:id="@+id/map_fragment_container"
+                android:layout_marginRight="49dp"
+                android:layout_marginLeft="45dp">
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/call_btn"
+            android:layout_width="87dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="540dp"
+            android:layout_marginTop="570dp"
+            android:src="@drawable/ic_support"
+            app:fabCustomSize="70dp" />
+    </RelativeLayout>
+
+
+</LinearLayout>

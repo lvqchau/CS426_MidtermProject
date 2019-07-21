@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:layout_height="120dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginHorizontal="100dp"
+    android:id="@+id/cardview_phonelist"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="15dp"
+    android:layout_marginTop="40dp"
+    app:cardBackgroundColor="#ffffff">
+    <!--app:cardBackgroundColor="#21ABB1"-->
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/id_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/pop_med"
+                android:text="Hello"
+                android:textColor="#505050"
+                android:textSize="0dp"
+                />
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/contact_avatar"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_store"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/contactname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/pop_reg"
+                    android:text="Thanh Tran"
+                    android:textSize="25sp" />
+
+
+
+                <TextView
+                    android:id="@+id/phonenumber"
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:layout_marginTop="-5dp"
+                    android:fontFamily="@font/pop_reg"
+                    android:text="090909090"
+                    android:textSize="21sp" />
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="700dp"
+
+            android:id="@+id/contact_call"
+            android:background="@drawable/ic_call_white" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

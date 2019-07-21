@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp"
+    android:paddingHorizontal="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="60dp"
+            android:layout_marginVertical="5dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_marginHorizontal="10dp"
+
+            android:id="@+id/cardview_list"
+            app:cardElevation="2dp"
+            app:cardCornerRadius="18dp"
+            >
+            <EditText
+                android:id="@+id/editName"
+                android:textSize="23sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:layout_marginHorizontal="15dp"
+                android:fontFamily="@font/pop_reg"
+                android:inputType="text"
+                android:background="@null"
+                android:hint="Title" />
+        </android.support.v7.widget.CardView>
+
+
+
+
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="210dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="10dp"
+            android:id="@+id/cardview_list3"
+            app:cardElevation="2dp"
+            app:cardCornerRadius="18dp"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:gravity="end"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="$"
+                    android:gravity="center_vertical"
+                    android:fontFamily="@font/pop_semibold"
+                    android:textSize="70sp"/>
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+
+
+                <EditText
+                    android:id="@+id/editDetail"
+                    android:layout_width="400dp"
+                    android:textSize="23sp"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/editName"
+                    android:background="@null"
+                    android:layout_marginHorizontal="15dp"
+                    android:ems="10"
+                    android:gravity="top"
+                    android:hint="Details"
+                    android:inputType="textMultiLine"
+                    android:lines="8"
+                    android:fontFamily="@font/pop_reg"
+                    android:layout_marginVertical="15dp"
+                    android:maxLines="10"
+                    android:minLines="6"
+                    android:paddingRight="10dp" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="match_parent"
+                    android:background="#000000"
+                    android:layout_marginVertical="25dp"/>
+
+
+                <EditText
+                    android:id="@+id/editPrice"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/editDetail"
+
+                    android:background="@null"
+                    android:ems="10"
+                    android:fontFamily="@font/pop_reg"
+                    android:hint="Price"
+                    android:inputType="text"
+                    android:paddingHorizontal="10dp"
+                    android:textAlignment="textStart"
+                    android:textSize="23sp" />
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="400dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="230dp"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_marginVertical="20dp"
+                android:id="@+id/cardview_list4"
+                app:cardElevation="2dp"
+                app:cardCornerRadius="18dp"
+                >
+
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/ic_launcher_background"
+                    android:layout_below="@id/editPrice"/>
+
+            </android.support.v7.widget.CardView>
+            <Button
+                android:id="@+id/btnChoose"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="345dp"
+                android:layout_marginTop="205dp"
+                android:background="@drawable/rectangle_blue"
+                android:backgroundTint="#21ABB1"
+                android:gravity="center"
+                android:textSize="19sp"
+                android:text="CHOOSE IMAGE"
+                android:textColor="#ffffff"
+                android:fontFamily="@font/pop_semibold"
+                />
+
+        </RelativeLayout>
+
+
+
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:fontFamily="@font/pop_semibold"
+            android:layout_marginHorizontal="10dp"
+            android:layout_width="match_parent"
+            android:paddingTop="4dp"
+            android:layout_height="50dp"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:background="@drawable/signout_button_full"
+            android:text="ADD TO LIST" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

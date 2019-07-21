@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AccountFragment">
+
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="45dp"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginVertical="5dp"
+                android:background="@drawable/ic_facebook"/>
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginVertical="5dp"
+                android:background="@drawable/ic_shopee"/>
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginVertical="5dp"
+                android:background="@drawable/ic_instagram"/>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/signout_btn"
+            android:layout_width="110dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="4dp"
+            android:layout_height="40dp"
+            android:textSize="16sp"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="294dp"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/pop_reg"
+            android:background="@drawable/signout_button"
+            android:text="SIGN OUT"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                >
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/camera_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:fabCustomSize="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="110dp"
+                    android:src="@drawable/ic_camera"
+                    />
+                <android.support.v7.widget.CardView
+                    android:layout_width="155dp"
+                    android:layout_height="155dp"
+                    android:layout_marginTop="20dp"
+                    app:cardBackgroundColor="#21ABB1"
+                    app:cardCornerRadius="80dp"
+                    app:cardElevation="0dp">
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/profile_image"
+                        android:layout_width="145dp"
+                        android:layout_height="145dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_store"
+                        />
+
+                </android.support.v7.widget.CardView>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/pop_med"
+                android:layout_marginBottom="20dp"
+                android:text="quynhchauuu"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/pop_reg"
+                android:layout_marginHorizontal="25dp"
+                android:text="Full name"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="25dp"
+                android:textSize="18sp"
+                android:fontFamily="@font/pop_med"
+                android:id="@+id/fullname"
+                android:textColor="#000"
+                android:text="Long Vu Quynh Chau"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginBottom="10dp"
+                android:background="#21ABB1"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/pop_reg"
+                android:layout_marginHorizontal="25dp"
+                android:text="Date joined"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="25dp"
+                android:textSize="18sp"
+                android:fontFamily="@font/pop_med"
+                android:textColor="#000"
+                android:text="26-08-2018"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginHorizontal="25dp"
+                android:background="#21ABB1"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/map_btn"
+                    android:background="@drawable/ic_ggmap"/>
+                <android.support.v7.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:paddingHorizontal="20dp"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="15dp"
+                    app:cardBackgroundColor="#21ABB1"
+                    android:layout_height="30dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:paddingHorizontal="15dp"
+                        android:id="@+id/map_loc"
+                        android:fontFamily="@font/pop_reg"
+                        android:text="214 Nguyen Trai, District 1"
+                        android:textColor="#fff"/>
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginBottom="5dp"
+                android:textAlignment="center"
+                android:fontFamily="@font/pop_med"
+                android:text="Statistics"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/pop_reg"
+                    android:text="26-08-2018"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="textEnd"
+                    android:fontFamily="@font/pop_reg"
+                    android:text="26-08-2019" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_height="180dp"
+                    android:padding="1dp"
+                    android:background="@drawable/blue_box">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/graph"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="120dp"
+                        android:layout_marginLeft="60dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <View
+                                android:layout_width="25dp"
+                                android:layout_height="4dp"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/blue_rec"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="13sp"
+                                android:fontFamily="@font/pop_reg"
+                                android:text="Selling Rate"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <View
+                                android:layout_width="25dp"
+                                android:layout_height="4dp"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/yellow_rec"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:textSize="13sp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/pop_reg"
+                                android:text="Customer Rating"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/call_btn"
+                    android:layout_width="87dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="294dp"
+                    android:layout_marginTop="130dp"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_support2"
+                    app:fabCustomSize="70dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+</RelativeLayout>

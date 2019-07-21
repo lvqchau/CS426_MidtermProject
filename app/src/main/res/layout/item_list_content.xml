@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:layout_height="60dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginTop="20dp"
+    android:id="@+id/cardview_list"
+    app:cardElevation="2dp"
+    app:cardCornerRadius="18dp">
+    <!--app:cardBackgroundColor="#21ABB1"-->
+
+
+    <TextView
+        android:id="@+id/id_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:fontFamily="@font/pop_med"
+        android:text="Hello"
+        android:textColor="#505050"
+        android:textSize="0dp"
+         />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="106dp"
+        android:layout_marginTop="19dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/ic_star_yellow"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/ic_star_yellow"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/ic_star_yellow"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/ic_star_yellow"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_star_blank"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    <Button
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/remove_btn"
+        android:background="@drawable/ic_cancel_14dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/pop_med"
+            android:text="Item1"
+            android:textColor="#505050"
+            android:textSize="19sp" />
+
+
+
+        <TextView
+            android:id="@+id/detail2"
+            android:layout_width="230dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="40dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:fontFamily="@font/pop_reg"
+            android:text="Some description about this item"
+            android:textColor="#505050"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
