@@ -1,2 +1,2 @@
-# CS426_MidtermProject
-Midterm Project for Mobile Development using Masterflow
+# CS426_ShopManagingApp
+Midterm Project for Mobile Development course using Masterflow
